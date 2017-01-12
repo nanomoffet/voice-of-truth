@@ -1,0 +1,31 @@
+{
+  "name": "typescript-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "create": "npm install && gulp compile && rm -rf .git .publish && git init && git add . && git commit -m 'initial commit of files' && hub create && git push origin master && git checkout --orphan gh-pages && git rm -rf . && touch README.md && git add README.md && git commit -m 'initial gh pages commit' && git push --set-upstream origin gh-pages && git checkout master && gulp deploy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "browserify": "^13.3.0",
+    "cz-conventional-changelog": "^1.2.0",
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-sass": "^3.0.0",
+    "gulp-typescript": "^3.1.4",
+    "gulp-watch": "^4.3.11",
+    "typescript": "^2.1.4",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
