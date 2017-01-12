@@ -7,6 +7,7 @@ var sass = require('gulp-sass');
 var tsProject = ts.createProject('./src/tsconfig.json');
 var connect = require('gulp-connect');
 var deploy = require('gulp-gh-pages');
+var merge = require('merge-stream');
 /*
  compile typescript
  use ES5 and commonJS module
@@ -64,7 +65,9 @@ gulp.task('livereload', function() {
     })
 
     gulp.task('deploy', function () {
-        return gulp.src("./dist/**/*")
+         var source = gulp.src("./dist/**/*");
+         var cname = gulp.src("./CNAME");
+             return merge(source, cname)
             .pipe(deploy())
     });
     /*
