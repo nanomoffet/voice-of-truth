@@ -59,10 +59,10 @@ gulp.task('livereload', function() {
      Watch typescript and sass
      */
     gulp.task('watch', function() {
-        gulp.watch('src/styles/scss/styles.scss', ['sass']);
+        gulp.watch('src/styles/**/*.scss', ['sass']);
          gulp.watch('src/**/*.ts', ['typescript','browserify']);
         gulp.watch('src/**/*.html', ['copy']);
-    })
+    });
 
     gulp.task('deploy', function () {
          var source = gulp.src("./dist/**/*");

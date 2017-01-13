@@ -1,8 +1,114 @@
-// Imports
-
 // Vendor
 
 @import '../../node_modules/bootstrap/scss/bootstrap';
 
 // Custom
 
+body, html, main {
+  height: 100%;
+}
+
+body {
+  color: #fff;
+  font-family: 'Padauk', sans-serif;
+  font-size: 16px;
+}
+
+.about_bg {
+  height: auto;
+  background-color: #fff;
+  color: #000;
+}
+
+.contact_bg {
+  height: 100vh;
+  background-color: #fff;
+  color: #000;
+}
+.home_bg {
+  background: url("../assets/images/home_bg.jpg") no-repeat fixed center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.events_bg {
+  background: url("../assets/images/events_bg.jpg") no-repeat fixed center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+header {
+  position: fixed;
+  z-index: 10;
+  background: #000;
+  width: 100%;
+}
+
+.churchLogo {
+  padding-left: 2.5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  width: 125px;
+  height: auto;
+  float: left;
+}
+
+.nav {
+  text-transform: uppercase;
+  padding-top: 2%;
+  font-size: 1.2rem;
+  float: right;
+  width: 20%;
+
+  li {
+    margin-right: 5%;
+  }
+}
+
+.cta {
+  text-transform: uppercase;
+  font-size: 4rem;
+  text-align: center;
+  padding-top: 15%;
+
+  span {
+    color: #3A68BA;
+  }
+}
+
+.sundays, .thursdays {
+  width: 50%;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.sundays {
+  float: left;
+  padding-left: 30%;
+}
+
+.thursdays {
+  float: right;
+  padding-right: 30%;
+}
+
+.subtitle {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.aboutImg {
+  max-width: 50%;
+  height: auto;
+}
+
+.fingerOnWord {
+  float: left;
+}
+
+.bibleStudy {
+  float: right;
+  clear: left;
+}
