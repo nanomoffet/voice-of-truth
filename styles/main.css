@@ -5995,10 +5995,15 @@ body {
   font-family: 'Padauk', sans-serif;
   font-size: 16px; }
 
+.no-gutters {
+  padding-left: 0;
+  padding-right: 0; }
+
 .about_bg {
   height: auto;
   background-color: #fff;
-  color: #000; }
+  color: #000;
+  text-align: center; }
 
 .contact_bg {
   height: 100vh;
@@ -6009,13 +6014,13 @@ body {
   background: url("../assets/images/home_bg.jpg") no-repeat fixed center;
   background-size: cover;
   height: 100vh;
-  width: 100vw; }
+  width: 100%; }
 
 .events_bg {
   background: url("../assets/images/events_bg.jpg") no-repeat fixed center;
   background-size: cover;
   height: 100vh;
-  width: 100vw; }
+  width: 100%; }
 
 header {
   position: fixed;
@@ -6066,7 +6071,7 @@ header {
   text-transform: capitalize; }
 
 .aboutImg {
-  max-width: 50%;
+  max-width: 100%;
   height: auto; }
 
 .fingerOnWord {
@@ -6075,3 +6080,15 @@ header {
 .bibleStudy {
   float: right;
   clear: left; }
+
+.aboutPoints {
+  clear: left;
+  float: left; }
+
+.eventBox {
+  display: block;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  height: 80%;
+  min-height: 80%;
+  margin-top: 10%; }
