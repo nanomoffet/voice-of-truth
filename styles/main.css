@@ -6084,6 +6084,8 @@ header {
 .aboutPoints {
   clear: left;
   float: left; }
+  .aboutPoints ul {
+    list-style: none; }
 
 .eventBox {
   display: block;
